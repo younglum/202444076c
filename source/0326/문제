@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+    int num=0, a=0, b=0;
+    while (num<=10)
+    {
+        num++;
+        b=a+b;
+        a++;
+    }
+    printf("1부터 10까지의 합 = %d\n", b);
+    printf("while문이 끝난 후의 num의 값 = %d", num);
+    
+}   
