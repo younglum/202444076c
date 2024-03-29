@@ -13,5 +13,6 @@
         비밀번호 : <input type="password" size="15" value=""><br>
         <input type="submit" size="15" value="전 송">
     </form>
+    자기소개 : <textarea cols="40" rows="8"></textarea>
 </body>
 </html>
