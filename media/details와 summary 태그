@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>details와 summary 태그</h3>
+    <hr>
+    Q &amp; A 리스트
+    <hr>
+    <details>
+        <summary>머리는 사람인데 몸은 사자인것은?
+        </summary>
+        <p> 스핑크스</p>
+    </details>
+    <details>
+        <summary>오늘날의 컴퓨터기기 틀을 만든 공학자는?</summary>
+        <p>폰 노이만</p>
+    </details>
+</body>
+</html>
