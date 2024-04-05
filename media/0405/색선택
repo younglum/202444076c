@@ -1,0 +1,12 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+          색 선택 : <input type="color" value="#00ff00" onchange="document.body.style.color=this.value">
+
+    </body>
+    </html>
