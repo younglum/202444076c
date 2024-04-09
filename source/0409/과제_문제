@@ -14,6 +14,5 @@ int main(){
         printf("%d를(을) %d번 더한 값 : %d\n", b,--c,d);
         b++;
     }
-    printf("최종값 : %c",d*2);
+    printf("문자로 변환된 최종값 : %c",d*2);
 }
-
