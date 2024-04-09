@@ -11,8 +11,9 @@ int main(){
             d+=b;
             printf("%d\n", d);
         }
-        printf("%d를(을) %d번 더한 값 : %d\n", b,c,d);
+        printf("%d를(을) %d번 더한 값 : %d\n", b,--c,d);
         b++;
     }
     printf("최종값 : %d",d);
 }
+
