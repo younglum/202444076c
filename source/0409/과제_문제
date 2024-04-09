@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    unsigned int a,b,c,d;
+    b=3;
+    c=0;
+    d=0;
+    for(a=1;a<=4;a++){
+        for (c=1;c<=2;c++)
+        {
+            d+=b;
+            printf("%d\n", d);
+        }
+        printf("%d를(을) %d번 더한 값 : %d\n", b,c,d);
+        b++;
+    }
+    printf("최종값 : %d",d);
+}
