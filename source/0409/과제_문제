@@ -9,7 +9,7 @@ int main(){
         for (c=1;c<=2;c++)
         {
             d+=b;
-            printf("%d\n", d);
+            printf("%d\r", d);
         }
         printf("%d를(을) %d번 더한 값 : %d\n", b,--c,d);
         b++;
