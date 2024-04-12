@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font: normal 20px verdana;
+        }
+        .DropText {
+            text-shadow: 3px 3px;
+        }
+        .redText {
+            text-shadow: 3px 3px red;
+        }
+        .blurtext {
+            text-shadow: 3px 3px 5px skyblue;
+        }
+        .multieffect {
+            color: yellow;
+            text-shadow: 2px 2px 2px black,0 0 25px blue,0 0 5px darkblue;
+        }
+        #s1, #s2, #s3{width: 150; height: 70; padding: 10px;
+             border: 10px solid lightgray;
+             background-image: url("media/cat.PNG");
+             background-size: 150px 150px;
+            background-repeat: no-repeat;
+        }
+        #s1 {
+            box-shadow: 10px 10px red;
+        }
+        #s2 {
+            box-shadow: 10px 10px 5px skyblue;
+        }
+        #s3 {
+            box-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>다양한 그림자 효과</h3>
+    <h4>텍스트 효과</h4>
+    <div class="DropText">drop shadow</div>
+    <div class="redText">color shadow</div>
+    <div class="blurtext">blur shadow</div>
+    <div class="multieffect">multiple effect shadow</div>
+    <hr>
+    <h4>박스 효과</h4>
+    <div id="s1">고양이와 함께</div><br>
+    <div id="s2">고양이와 함께</div><br>
+    <div id="s3">고양이와 함께</div><br>
+</body>
+</html>
