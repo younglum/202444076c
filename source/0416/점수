@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int total=0, perfect,great,good,miss;
+    float score=0;
+    printf("정확도 입력 : ");
+    scanf("%f", &score);
+    if (score>=100.5000 && score<=101.0000)
+    {
+        printf("정확도 : %.4f\n 등급 : SSS+", score);
+    }
+    else if (score>=100.0000)
+    {
+        printf("정확도 : %.4f\n 등급 : SSS",score);
+    }
+    else if (score>=99.5000)
+    {
+        printf("정확도 : %.4f\n 등급 : SS+", score);
+    }
+    else if (score>=99.0000)
+    {
+        printf("정확도 : %.4f\n 등급 : SS", score);
+    }
+    else if (score>=98.0000)
+    {
+        printf("정확도 : %.4f\n 등급 : S+", score);
+    }
+    else if (score>=97.0000)
+    {
+        printf("정확도 : %.4f\n 등급 : S", score);
+    }
+    else if (score>=80.0000)
+    {
+        printf("정확도 : %.4f\n 등급 : AAA", score);
+    }
+    else if (/* condition */)
+    {
+        /* code */
+    }
+    ("정확도 : %.4f\n 등급 : B", score);
+}
