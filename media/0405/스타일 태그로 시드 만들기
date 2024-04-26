@@ -16,8 +16,9 @@
 </body>
 </html>
 
+<!--
 mystyle.css{
-body {
+    body {
     background-color: linen;
     color: blueviolet;
     margin-left:30px;
@@ -27,3 +28,4 @@ h3 {text-align: center; color: darkred;}
 hr {border: 3px solid yellowgreen;}
 span {background-color: yellow;}
 }
+-->
