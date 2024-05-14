@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(){
+    int score[5]={77,92,89,98,78};
+    int cnt;
+
+    for ( cnt = 0; cnt < sizeof(score)/sizeof(score[0]); cnt++)
+    {
+        printf("score[%d] = %d\n", cnt,score[cnt]);
+    }
+    return 0;
+}
