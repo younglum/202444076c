@@ -8,15 +8,15 @@ int main(){
     for (int i = 0; i < cnt; i++)
     {
         scanf("%d", &a[i]);
-         if (max < a[i])
-        {
-            max=a[i];
-            value++;
-        }
     }
     for (int j = cnt-1; j >=0; j--)
     {
-        printf("%d", a[j]);
+        printf("%d\n", a[j]);
+         if (max < a[j])
+        {
+            max=a[j];
+            value++;
+        }
     }
     printf("보이는 값 계수 : %d", value);
     
