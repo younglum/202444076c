@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(){
+    int a[]={1,2,3,4,5,6,7,8,9,10};
+    int *pa;
+    pa=&a;
+    printf("초기 데이터값 : %u\n 주소값 : %u\n", *pa,pa);
+    *++pa;
+    printf("*++pa를 실행한 후의 주소값 : %u\n 데이터값: %u\n", pa, *pa);
+    ++*pa;
+    printf("++*pa를 실행한 후의 주소값 : %u\n데이터값 : %u",pa,*pa);
+}
