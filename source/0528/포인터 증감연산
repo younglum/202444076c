@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    char c;
+    char *pc;
+    pc=&c;
+    int i=2;
+    int *pi;
+    pi=&i;
+    double d=5;
+    double *pd;
+    pd=&d;
+    printf("1.포인터 증감 연산자 사용 전 주소값\n");
+    printf("char형 포인터 주소값: %d\n", pc);
+    printf("int형 포인터 주소값: %d\n int형 포인터의 데이터값: %d\n", pi,i);
+    printf("double형 포인터 주소값: %d\ndouble형 포인터의 데이터값 : %d\n", pd,*pd);
+    *pc++;
+    *++pd;
+    (*pi)++;
+    printf("\nchar형 포인터 *p++ 연산자 수행 후 주소값 : %d", pc);
+    printf("\n*++p 형태의 연산자를 수행한 double형 포인터의 주소값: %d\n double형 포인터의 데이터값 : %d\n",pd, *pd);
+    printf("(*pi)++를 수행한 int형 포인터 주소값: %d\nint형 포인터의 데이터값 : %d", pi, *pi);
+    return 0;
+}
