@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = prompt("문장을 입력해주세요.","");
+        let ary=str.split(" ");
+        document.write("<h3>분리된 문자</h3>")
+        for(let i=0; i<ary.length;i++){
+            document.write(ary[i],"<br>");
+        }
+    </script>
+</body>
+</html>
