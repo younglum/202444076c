@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .star {
+            float: left;
+            border: 1px solid yellowgreen;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <div class="star">
+        <script>
+        let num = parseInt ( prompt("숫자를 입력하세요"));
+        let star1="";
+        for(let i=0; i<num; i++){
+            star1+= "*";
+            document.write(star1,"<br>")
+        }
+        document.write("<br>");
+        let star2=num;
+        for(let i=num; i>0; i--){
+            document.write("*".repeat(i),"<br>")
+        }
+        </script>
+    </div>
+    <div class="star">
+        <script>
+            for(let i=0;i<num; i++){
+                let star3="";
+                for(let j=0; j<num; j++){
+                    if(j<i){
+
+                    }
+                }
+            }
+            document.write("<br>");
+            for(let i=0; i<num; i++){
+                let star4="";
+                for(let j=0; j<num; j++){
+                    if(j<num-i-1){
+                        star4+= "&nbsp;";
+                    }
+                    else {
+                        star4 +="*";
+                    }
+                }
+            }
+            document.write(star4,"<br>");
+        </script>
+    </div>
+    <div class="star">
+        <script>
+            document.write("<br>");
+            for(let i=0; i<num; i++){
+                let star5="";
+                for(let j=0; j<num; j++){
+                    star5 +="&nbsp;";
+                }
+                for(let j=0; j<2*1+1;j++){
+                    star5+="*";
+                }
+                document.write(star5,"<br>");
+            }
+        </script>
+    </div>
+</body>
+</html>
