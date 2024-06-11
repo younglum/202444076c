@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int a[]={1,2,3,4,5,6,7,8,9,10};
+    int a[]={1,5,3,4,5,6,7,8,9,10};
     int *pa;
     pa=&a;
     printf("초기 데이터값 : %u\n 주소값 : %u\n", *pa,pa);
@@ -9,8 +9,13 @@ int main(){
     printf("*++pa를 실행한 후의 주소값 : %u\n 데이터값: %u\n", pa, *pa);
     ++*pa;
     printf("++*pa를 실행한 후의 주소값 : %u\n데이터값 : %u\n",pa,*pa);
+    (*pa)++;
+    printf("(*pa)++를 실행한 후의 주소값 : %u\n 데이터값 : %u\n", pa, *pa);
+    *pa++;
+    printf("*p++를 실행한 후의 주소값 : %u\n데이터값 : %u\n", pa, *pa);
     for (int i = 0; i < 9; i++)
     {
         printf("문자열 안의 값 : %d\n", a[i]);
     }
+    printf("++*p는 데이터값만 변경함.\n *++pa는 주소값만 변경함\n(*pa)++는 데이터값만 변경함\n*pa++는 주소값만 변경함");
 }
