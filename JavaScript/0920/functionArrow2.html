@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 100px auto;
+            width: 300px;
+        }
+        .input-group input {
+            font-size: 20px;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <input type="text" name="sum1" placeholder="결과1">
+            <input type="text" name="sum2" placeholder="결과2">
+            <input type="text" name="sum3" placeholder="결과3">
+        </div>
+    </div>
+    <script>
+       function sumtext(x,y){
+        return '계산결과는 ' + (x+y) + '입니다.';
+       }
+
+       document.querySelector('input[name="sum1"]').value=sumtext(3,4);
+       document.querySelector('input[name="sum2"]').value=sumtext(5,6);
+       document.querySelector('input[name="sum3"]').value=sumtext(7,8);
+    </script>
+</body>
+</html>

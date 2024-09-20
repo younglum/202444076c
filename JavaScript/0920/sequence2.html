@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        function formatHex(hex){
+            return hex.length == 1? "0"+hex : hex;
+        }
+        const drawSquare = () => {
+            let width = Math.round(Math.random()*50)+50;
+            let height = Math.ceil(Math.random()*50)+100;
+            let rColor = Math.floor(Math.random()*255).toString(16);
+            let gColor = Math.floor(Math.random()*255).toString(16);
+            let bColor = Math.floor(Math.random()*255).toString(16);
+        let color = formatHex(rColor)+ formatHex(gColor)+formatHex(bColor);
+        let css='width:'+ width +'px; height: ' + height + 'px; background:#'+color+';';
+        document.getElementById('box').style.cssText = css;    
+        }
+        drawSquare();
+</script>
+</body>
+</html>
