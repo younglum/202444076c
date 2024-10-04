@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cursor;
+        function makeCursor(){
+            cursor=document.getElementById("cursor");
+            cursor.style.zIndex=100;
+            document.addEventListener("mousemove",function (e){
+                cursor.style.left=e.clientX + "px";
+                cursor.style.top=e.clientY + "px";
+            });
+        }
+    </script>
+</head>
+<body onload="makeCursor()">
+    <h3>커서</h3>
+    <hr>
+    <p id="p">마우스를 움직이면 그림 자동이동</p>
+    <div id="cursor" style="position: absolute;">
+        <img src="media/apple.png" width="30px" height="30px">
+    </div>
+</body>
+</html>
