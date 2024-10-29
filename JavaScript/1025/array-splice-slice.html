@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const pets = ['개','고양이','곰','말'];
+        // splice() : 배열의 요소를 삭제 하거나 교체하거나, 삽입하는 함수
+        document.write(`pets --> ${pets} <br>`);
+        pets.splice(2);             //2번 인덱스 부터 끝까지
+        document.write(`splice(2) --> ${pets} <br>`);
+        pets.splice(0,1);           //0번부터 1개 삭제
+        document.write(`splice(0,1) --> ${pets} <br>`);
+        document.write('<hr>');
+        pets.splice(0,0,'햄스터');  //0번 인덱스에 햅스터 삽입
+        document.write(`splice(0,0,'햄스터') --> ${pets} <br>`);
+        //1번 인덱스부터 1개 삭제하고 '거북이', '앵무새' 추가
+        pets.splice(1,1,"거북이","앵무새");
+        document.write(`splice(1,1,"거북이","앵무새") --> ${pets} <br>`);
+        document.write('<hr>');
+
+        const weeks = ['월','화','수','목','금'];
+        document.write('slice() : ', weeks.slice(),"<br>");         //그대로
+        document.write('slice() : ', weeks.slice(2),"<br>");        //2번 인덱스부터 끝까지
+        document.write('slice() : ', weeks.slice(2, 4),"<br>");     //2부터 4까지
+        document.write('slice() : ', weeks.slice(-2),"<br>");       //뒤에서 2번째부터 끝까지
+        document.write('slice() : ', weeks.slice(1,-2),"<br>");     //1부터 뒤에서 2번째부터 끝까지
+        document.write('원본 : ', weeks)
+    </script>
+</body>
+</html>
