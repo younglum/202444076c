@@ -3,3 +3,4 @@
 #   !!!본 실습은 Visual Studio Code,Python idle을(를) 사용함 !!!
 source = C언어
 media=html
+OpenSource = Go언어
