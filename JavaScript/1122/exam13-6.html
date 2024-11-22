@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        현재 위치와 지도 출력
+    </h3>
+    <hr>
+    <div id="msg">이곳에 위치 출력</div>
+    <iframe id="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br/>
+    <a id="bigmaplink" target="_blank">새 창에 큰 지도 보기</a>
+    <script>
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(success);
+        }
+        else{
+            alert("지원하지 않음");
+        }
+        function success(position){
+            let lat=position.coords.latitude;
+            let ion=position.coords.longitude;
+            let acc=position.coords.accuracy;
+
+            lat = lat.toPrecision(6);ion=ion.toPrecision(6);
+
+            let now=new Date(position.timestamp);
+            let text="현재시간"+now.toUTCString()+"<br>";
+            text+="현재위치(위도)"+lat+"경도"+ion+"<br>";
+            text+="정확도"+acc+"m<br>";
+
+            let map=document.getElementById("map");
+            map.src="https://www.openstreetmap.org/export/embed.html?bbox="+(parseFloat(ion)-0.01)+"%2C"+(parseFloat(lat)-0.01)+"%2C"+(parseFloat(ion)+0.01)+"%2C"+(parseFloat(lat)+0.01);
+
+            let maplink=document.getElementById("bigmaplink");
+            let zoom=15;
+            maplink.href="https://www.openstreetmap.org/#map="+zoom+"/"+lat+"/"
+        }
+    </script>
+</body>
+</html>
