@@ -13,7 +13,7 @@ class TimeStamp:
         if self.returntime:
             diff=self.returntime-self.renttime
         else:
-            diff=dt.now()-self.renttime
+            diff=dt.now()-self.renttime  #dt.now()=현재 시간을 가져오는 매소드
 
         return diff.total_seconds()
 
