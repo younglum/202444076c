@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    int a=0;
+    printf("정수로 된 값을 입력하세요. : ");
+    scanf("%d\n", &a);
+    printf("입력된 값 : %d", a);
+    return 0;
+}
