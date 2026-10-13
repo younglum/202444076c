@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int a=0;
+    printf("0부터 10 사이의 값을 입력해주세요.: \n");
+    scanf("%d", &a);
+    if( a>10 || a<0){
+        printf("0부터 10 사이의 값이 아닙니다.");
+        return 0;
+    }
+    else printf("입력된 값 : %d\n", a);
+    return 0;
+}
