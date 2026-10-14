@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int a=0;
+    printf("1부터 10만 이하의 숫자를 입력해주세요. : ");
+    scanf("%d", &a);
+    if(a<1){
+        printf("1 이하의 숫자 입니다.");
+        return 0;
+    }
+    else if(a>100000){
+        printf("10만을 초과한 값입니다.");
+        return 0;
+    }
+    else printf("입력된 값은 %d 입니다.", a);
+    return 0;
+}
