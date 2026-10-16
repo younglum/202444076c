@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main() {
+    // Variable declaration and operations
+    char name[] = "Alice";
+    int age = 25;
+    double height = 5.6;
+    bool isStudent = true;
+    
+    printf("Name: %s\n", name);
+    printf("Age: %d\n", age);
+    printf("Height: %.1f feet\n", height);
+    printf("Is student: %s\n", isStudent ? "true" : "false");
+    
+    // Variable operations
+    age += 1;
+    printf("Next year age: %d\n", age);
+    return 0;
+}
