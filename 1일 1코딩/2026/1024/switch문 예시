@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main() {
+    // Switch statement in C
+    int day = 3;
+    char dayName[20];
+    
+    switch (day) {
+        case 1:
+            strcpy(dayName, "Monday");
+            break;
+        case 2:
+            strcpy(dayName, "Tuesday");
+            break;
+        case 3:
+            strcpy(dayName, "Wednesday");
+            break;
+        case 4:
+            strcpy(dayName, "Thursday");
+            break;
+        case 5:
+            strcpy(dayName, "Friday");
+            break;
+        default:
+            strcpy(dayName, "Weekend");
+    }
+    
+    printf("Day %d is %s\n", day, dayName);
+    
+    // Switch with character
+    char grade = 'B';
+    switch (grade) {
+        case 'A':
+            printf("Grade A: Excellent\n");
+            break;
+        case 'B':
+            printf("Grade B: Good\n");
+            break;
+        case 'C':
+            printf("Grade C: Average\n");
+            break;
+        default:
+            printf("Grade %c: Unknown\n", grade);
+    }
+    
+    return 0;
+}
