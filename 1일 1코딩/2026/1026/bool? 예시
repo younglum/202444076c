@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main() {
+    // Boolean operations
+    bool a = true;
+    bool b = false;
+    int x = 10;
+    int y = 5;
+    
+    printf("a = %s, b = %s\n", a ? "true" : "false", b ? "true" : "false");
+    printf("x = %d, y = %d\n", x, y);
+    printf("\n");
+    
+    // Logical operators
+    printf("=== Logical Operators ===\n");
+    printf("a AND b: %s\n", (a && b) ? "true" : "false");
+    printf("a OR b: %s\n", (a || b) ? "true" : "false");
+    printf("NOT a: %s\n", (!a) ? "true" : "false");
+    printf("\n");
+    
+    // Comparison operators
+    printf("=== Comparison Operators ===\n");
+    printf("x > y: %s\n", (x > y) ? "true" : "false");
+    printf("x < y: %s\n", (x < y) ? "true" : "false");
+    printf("x == y: %s\n", (x == y) ? "true" : "false");
+    printf("x != y: %s\n", (x != y) ? "true" : "false");
+    printf("x >= y: %s\n", (x >= y) ? "true" : "false");
+    printf("x <= y: %s\n", (x <= y) ? "true" : "false");
+    
+    return 0;
+}
