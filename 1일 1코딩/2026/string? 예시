@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+int main() {
+    // String operations
+    char text[] = "Hello, Programming!";
+    char name[] = "alice";
+    char temp[100];
+    
+    printf("Original: %s\n", text);
+    printf("Length: %zu\n", strlen(text));
+    
+    // Uppercase
+    strcpy(temp, text);
+    for(int i = 0; temp[i]; i++) temp[i] = toupper(temp[i]);
+    printf("Uppercase: %s\n", temp);
+    
+    // Lowercase
+    strcpy(temp, text);
+    for(int i = 0; temp[i]; i++) temp[i] = tolower(temp[i]);
+    printf("Lowercase: %s\n", temp);
+    
+    // Capitalize name
+    strcpy(temp, name);
+    temp[0] = toupper(temp[0]);
+    printf("Capitalized name: %s\n", temp);
+    
+    // Substring
+    strncpy(temp, text, 5);
+    temp[5] = '\0';
+    printf("Substring: %s\n", temp);
+    
+    // Contains
+    printf("Contains 'Hello': %s\n", strstr(text, "Hello") ? "true" : "false");
+    
+    return 0;
+}
