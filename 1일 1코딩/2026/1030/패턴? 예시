@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main() {
+    // Nested loops - Pattern printing
+    printf("Pattern 1 - Right Triangle:\n");
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 0; j < i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+    printf("\nPattern 2 - Multiplication Table:\n");
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 3; j++) {
+            int result = i * j;
+            printf("%dx%d=%2d  ", i, j, result);
+        }
+        printf("\n");
+    }
+    
+    printf("\nPattern 3 - Number Grid:\n");
+    for (int row = 0; row < 3; row++) {
+        for (int col = 0; col < 4; col++) {
+            int number = row * 4 + col + 1;
+            printf("%2d ", number);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
