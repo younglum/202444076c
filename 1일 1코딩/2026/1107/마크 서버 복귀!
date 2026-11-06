@@ -1,0 +1,5 @@
+#include <stdio.h>
+int main() {
+    printf("서버에 2년만에 복귀!\n");
+    return 0;
+}
