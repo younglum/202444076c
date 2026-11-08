@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+struct student{
+    int number;
+    char name[20];
+    double grade;
+};
+
+int main() {
+    struct student a={1,"마스터이", 1.4};
+    printf("학번 : %d\n", a.number);
+    printf("이름 : %s\n", a.name);
+    printf("점수 : %.2f\n", a.grade);
+    return 0;
+}
