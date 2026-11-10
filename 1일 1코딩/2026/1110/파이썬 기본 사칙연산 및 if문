@@ -1,0 +1,9 @@
+print('Hello world!')
+a=1
+b=2
+print(a+b)
+c="Python"
+print(c)
+d=3
+if d > 3:
+    print("d는 3보다 큽니다.")
