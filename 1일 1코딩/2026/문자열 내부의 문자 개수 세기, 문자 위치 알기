@@ -1,0 +1,7 @@
+a="hobby is best chice"
+b=a.count('b')
+print("a 문자열 안의 b의 갯수는 ",b)
+c=a.find("b")
+print("a 문자열 안에서 b가 가장 처음 나온 위치 : ",c)
+d=a.find('k')
+print("a 문자열 안에 존재하지 않은 문자를 찾으려 할 때 출력값 : \n",d)
